@@ -1,0 +1,21 @@
+version: '3.4'
+services:
+  paperless.avado.dnp.dappnode.eth:
+    image: 'paperless.avado.dnp.dappnode.eth:0.1.0'
+    build:
+      context: ./build
+    volumes:
+      - 'data:/usr/src/paperless/data'
+      - 'media:/usr/src/paperless/media'
+      - 'consume:/usr/src/paperless/consume'
+      - 'export:/usr/src/paperless/export'
+      - '/etc/localtime:/etc/localtime:ro'
+      - '/etc/timezone:/etc/timezone:ro'
+    environment:
+      - PAPERLESS_OCR_LANGUAGE=eng
+    restart: always
+volumes:
+  data: {}
+  media: {}
+  consume: {}
+  export: {}
