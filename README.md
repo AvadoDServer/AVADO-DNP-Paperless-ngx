@@ -4,7 +4,7 @@
 document archive that reads (OCR), files and indexes scanned letters, bills and contracts,
 packaged for AVADO.
 
-- Page: **https://paperless.my.ava.do** (plain http works too).
+- Page: **https://paperless.my.ava.do** (plain http goes to the https page).
 - Image: the official `ghcr.io/paperless-ngx/paperless-ngx:3.4.2`, pinned by digest, plus nginx
   for HTTPS and Redis for the task queue.
 
