@@ -1,0 +1,39 @@
+{
+  "name": "paperless.avado.dnp.dappnode.eth",
+  "version": "0.1.0",
+  "upstream": "3.4.2",
+  "title": "Paperless-ngx (documents)",
+  "shortDescription": "Turn your paper letters, bills and contracts into a searchable archive",
+  "description": "Your own paperless office. Scan or photograph letters, bills and contracts, and Paperless reads the text, files them and makes every word searchable, all on your AVADO. Getting started: open Paperless; the first time, it asks you to create your account (this first account can manage everything). Then drag PDF files or photos onto the page. Paperless reads English by default; for German, French, Italian or Spanish documents click the link \"Document language\" below, change PAPERLESS_OCR_LANGUAGE to deu, fra, ita or spa (or, for example, deu+eng for both) and press \"Update environment variables\" (the app restarts by itself, your documents stay). Reading a document takes a few seconds to a minute and runs at a lower priority than the Ethereum node. Any device that can open my.ava.do (at home on the AVADO network, or away through Remote Access) can use it.",
+  "type": "service",
+  "autoupdate": true,
+  "image": {
+    "volumes": [
+      "data:/usr/src/paperless/data",
+      "media:/usr/src/paperless/media",
+      "consume:/usr/src/paperless/consume",
+      "export:/usr/src/paperless/export",
+      "/etc/localtime:/etc/localtime:ro",
+      "/etc/timezone:/etc/timezone:ro"
+    ],
+    "ports": [],
+    "environment": [
+      "PAPERLESS_OCR_LANGUAGE=eng"
+    ],
+    "restart": "always"
+  },
+  "author": "AVADO",
+  "license": "GPL-3.0",
+  "dependencies": {},
+  "links": {
+    "Open Paperless": "https://paperless.my.ava.do",
+    "Document language": "http://my.ava.do/#/packages/paperless.avado.dnp.dappnode.eth?tab=settings",
+    "Paperless-ngx project": "https://docs.paperless-ngx.com"
+  },
+  "ui": {
+    "OnboardingWizard": {
+      "url": "https://paperless.my.ava.do",
+      "external": true
+    }
+  }
+}

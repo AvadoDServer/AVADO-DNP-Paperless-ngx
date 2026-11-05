@@ -1,0 +1,40 @@
+{
+  "title": "Paperless-ngx",
+  "components": [
+    {
+      "name": "Paperless-ngx",
+      "github": "paperless-ngx/paperless-ngx",
+      "images": [
+        {
+          "var": "paperless",
+          "ref": "ghcr.io/paperless-ngx/paperless-ngx:{version}"
+        }
+      ],
+      "pins": [
+        {
+          "file": "build/Dockerfile",
+          "text": "ghcr.io/paperless-ngx/paperless-ngx:{version}@sha256:{paperless}"
+        },
+        {
+          "file": "build/Dockerfile",
+          "text": "# Paperless-ngx {version}, the",
+          "optional": true
+        },
+        {
+          "file": "dappnode_package.json",
+          "text": "\"upstream\": \"{version}\""
+        },
+        {
+          "file": "README.md",
+          "text": "(https://docs.paperless-ngx.com) {version}, a",
+          "optional": true
+        },
+        {
+          "file": "README.md",
+          "text": "`ghcr.io/paperless-ngx/paperless-ngx:{version}`",
+          "optional": true
+        }
+      ]
+    }
+  ]
+}
