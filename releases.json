@@ -5,5 +5,12 @@
     "uploadedTo": {
       "https://ipfs-upload.ava.do:443": "Thu, 05 Nov 2026 09:28:40 GMT"
     }
+  },
+  "0.1.1": {
+    "hash": "/ipfs/QmRY2biHthxyobSnLNT5b45R4iWYTxjcWQFmSzsQ7PSg4H",
+    "type": "manifest",
+    "uploadedTo": {
+      "https://ipfs-upload.ava.do:443": "Tue, 17 Nov 2026 16:26:09 GMT"
+    }
   }
 }
