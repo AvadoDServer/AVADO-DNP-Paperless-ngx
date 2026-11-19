@@ -1,5 +1,5 @@
-# Paperless-ngx 3.5.0, the official image (Debian 13), pinned by digest.
-FROM --platform=linux/amd64 ghcr.io/paperless-ngx/paperless-ngx:3.5.0@sha256:8c1e2c4e0abb50576c7a09f062ed581e2d955e298a302e1e196a35338639005e
+# Paperless-ngx 3.5.1, the official image (Debian 13), pinned by digest.
+FROM --platform=linux/amd64 ghcr.io/paperless-ngx/paperless-ngx:3.5.1@sha256:8508853b8a0f8394074260957d0be186c8c64f346973b24a7583de4580f306b9
 
 # nginx for the HTTPS front, Redis for Paperless's task queue.
 RUN apt-get update \

@@ -1,11 +1,11 @@
 # AVADO Paperless-ngx
 
-`paperless.avado.dnp.dappnode.eth`: [Paperless-ngx](https://docs.paperless-ngx.com) 3.5.0, a
+`paperless.avado.dnp.dappnode.eth`: [Paperless-ngx](https://docs.paperless-ngx.com) 3.5.1, a
 document archive that reads (OCR), files and indexes scanned letters, bills and contracts,
 packaged for AVADO.
 
 - Page: **https://paperless.my.ava.do** (plain http goes to the https page).
-- Image: the official `ghcr.io/paperless-ngx/paperless-ngx:3.5.0`, pinned by digest, plus nginx
+- Image: the official `ghcr.io/paperless-ngx/paperless-ngx:3.5.1`, pinned by digest, plus nginx
   for HTTPS and Redis for the task queue.
 
 ## How it is put together
